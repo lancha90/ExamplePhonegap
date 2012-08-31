@@ -1,4 +1,6 @@
 ExamplePhonegap
 ===============
 
-Example_Phonegap
+Examples developed with jquery mobile and Phonegap
+
+- Popup [`.popup/index.html`)

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+
+<meta http-equiv="Content-type" name="viewport"
+	content="initial-scale=1, maximum-scale=4.0, user-scalable=no, width=device-width">
+
+<script src="../js/jquery-1.7.2.min"></script>
+<script src="../js/jquery.mobile-1.1.1.min.js"></script>
+<script src="../js/jquery.mobile.simpledialog.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+
+
+<link rel="stylesheet" href="../style/jquery.mobile-1.1.0.min.css" />
+<link rel="stylesheet" href="../style/jquery.mobile.simpledialog.min.css" />
+<link rel="stylesheet" href="../style/jquery.mobile-1.1.0.css" />
+
+
+
+
+<script type="text/javascript">
+	
+$(document).delegate('#dialoglinks', 'click', function() {
+    $(this).simpledialog({
+        'mode' : 'blank',
+        'prompt': false,
+        'forceInput': false,
+        'useModal':true,
+        'fullHTML' : 
+            "<ul data-role='listview'><li>Some</li><li>List</li><li>Items</li></ul><a rel='close' data-role='button' href='#' id='simpleclose'>Close</a>"
+    })
+});
+	
+	
+</script>
+
+</head>
+
+
+<a href="#" id="dialoglinks" data-role="button">Open Dialos</a>
+
+</body>
+</html>
